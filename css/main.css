@@ -54,8 +54,13 @@ header{
     margin: auto auto auto auto;
 }
 
-.h1, .subhead{
+.h1{
     font-size: 1em;
+}
+
+.subhead{
+    font-size: 1em;
+    margin-bottom: -10%;
 }
 
 .red-container{
@@ -240,10 +245,9 @@ nav ul li a:hover{
     }
 }
 
-@meida only screen and (min-width: 1024px){
-
+@media only screen and (min-width: 1024px){
     .cta{
-        width: 10%;
+        width: 50%;
     }
 
     .container{
@@ -259,4 +263,42 @@ nav ul li a:hover{
     .hide-desktop{
         display: none;
     }
+
+    nav ul{
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        align-items: baseline;
+        align-content: flex-end;
+        flex-grow: 0;
+        flex-basis: content;
+        flex-wrap: row nowrap;
+        padding-top: 1%;
+    }
+
+    nav ul li{
+        float: left;
+    }
+
+    nav ul li a{
+        color: black;
+        background-color: inherit;
+        text-align: right;
+        padding: 1em 2em;
+    }
+
+    nav ul li a:hover{
+        background-color: inherit;
+    }
+
+    
+}
+
+.scroll{
+    border:0;
+    margin: 0;
+    width: 1%;
+    height: 5%;
 }
