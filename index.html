@@ -1,63 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="shortcut icon" href="favicon.ico">
-        <title>
-            Rediscover Wellness
-        </title>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
 
-    <body>
-        <div class="container">
-            <header>
-                    <img src="images/RediscoverWellness.png" alt="Monash" class="logo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>
+        Rediscover Wellness
+    </title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
 
-                    <nav>
-                        <a href="#" class="hide-desktop">
-                            <img src="images/ham_menu.png" alt="toggle menu" class="menu" id="menu">
-                        </a>
-                        <ul class="show-desktop hide-mobile" id="nav">
-                            <li id="exit" class="exit-btn hide-desktop"><img src="images/close_window.png" alt="exit menu"></li>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="pages/activities.html">Explore</a></li>
-                            <li><a href="pages/nutfood.html">Nutrient Food</a></li>
-                            <li><a href="pages/workout.html">Workout</a></li>
-                            <li><a href="pages/About.html">About</a></li>
-                        </ul>
-                    </nav>    
-            </header>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/RediscoverWellness.png" alt="Monash" class="logo">
 
-            <section>
-                <img src="images/runningman.gif" alt="server graphic" class="server">
-                <h1>Work out more to get healthy.</h1>
-                <p class="subhead">Go wellness without payment</p>
-            </section>
-        </div>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham_menu.png" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/close_window.png" alt="exit menu"></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/activities.html">Explore</a></li>
+                    <li><a href="pages/nutfood.html">Nutrient Food</a></li>
+                    <li><a href="pages/workout.html">Workout</a></li>
+                    <li><a href="pages/About.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img src="images/runningman.gif" alt="server graphic" class="server">
+            <h1>Work out more to get healthy.</h1>
+            <p class="subhead">Go wellness without payment</p>
+        </section>
+    </div>
 
     <div class="main-container">
         <div class="red-container">
             <div class="container">
                 <ul>
-                    <li>                        
+                    <li>
                         <figure>
-                           <a href="pages/activities.html"><img src="images/con_location.png" alt="user picture"></a>
-                           <blockquote>Explore Nearby<br>Activities</blockquote>
-                        </figure>                        
-                    </li>
-                    <li>                        
-                        <figure>
-                           <a href="pages/nutfood.html"><img src="images/con_food.png" alt="foodlogo"></a>                           
-                           <blockquote>Eat More<br>Healthier</blockquote>
-                        </figure>                        
+                            <a href="pages/activities.html"><img src="images/con_location.png" alt="user picture"></a>
+                            <blockquote>Explore Nearby<br>Activities</blockquote>
+                        </figure>
                     </li>
                     <li>
                         <figure>
-                        <a href="pages/workout.html"><img src="images/con_situp.png" alt="situplogo"></a>
-                           <blockquote>Indoor Workouts</blockquote>
+                            <a href="pages/nutfood.html"><img src="images/con_food.png" alt="foodlogo"></a>
+                            <blockquote>Eat More<br>Healthier</blockquote>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <a href="pages/workout.html"><img src="images/con_situp.png" alt="situplogo"></a>
+                            <blockquote>Indoor Workouts</blockquote>
                         </figure>
                     </li>
                 </ul>
@@ -71,17 +72,34 @@
 
     </div>
 
-        <footer>
-            <div class="foot-container">
-                <div class="container">
-                    <a href="#"><img src="images/RediscoverWellness.png" class="logo" alt="logo"></a>
-                    <p class="address">Monash Caulfield, 3163<br>Australia</p>
-                    <ul class="footer-links">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
+    <footer>
+        <div class="foot-container">
+            <div class="container">
+                <a href="#"><img src="images/RediscoverWellness.png" class="logo" alt="logo"></a>
+                <p class="address">Monash Caulfield, 3163<br>Australia</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function (e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function (e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+</body>
+
 </html>
